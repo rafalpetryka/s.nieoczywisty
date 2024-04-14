@@ -1,1 +1,61 @@
-Wojciech Barszczowski
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratulacje!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .amatic {
+            font-family: 'Amatic SC', cursive;
+            color: rgb(92, 62, 192);
+            font-size: 4rem;
+        }
+        .video-wrapper {
+          position: relative;
+          padding-bottom: 177.78%; /* 16:9 Aspect Ratio */
+          height: 0;
+          overflow: hidden;
+        }
+
+        .responsive-iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+
+        @media (min-width: 1024px) { /* Apply these styles on screens 1024px and larger */
+  .video-wrapper {
+    width: 50%; /* 50% width on large screens */
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio on large screens */
+  }
+}
+    </style>
+  </head>
+<body class="bg-white">
+  <header>
+    <div class="p-20 pb-10"><img src="logo.jpg" alt="Logo" class="mx-auto lg:w-1/3 p-4"></div>
+  </header>
+    <main class="pb-10">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="amatic mb-4 text-center leading-tight pb-10">Gratulacje Wojtek!</h1>
+            <div class="video-wrapper mb-14">
+              <video controls autoplay class="responsive-iframe" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <source src="videos/A3V6K9.MOV" type="video/mp4">
+                Przeglądarka nie obsługuje odtwarzacza video.
+              </video>
+            </div>
+            <a href="https://drive.google.com/file/d/1x5bQg2zhm1C6ii5dIiEHibUTra3PV11s/view?usp=sharing" download class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-2xl font-bold rounded-md text-gray-800 bg-yellow-300 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-200">
+                Pobierz dyplom
+            </a>
+        </div>
+    </main>
+</body>
+</html>
